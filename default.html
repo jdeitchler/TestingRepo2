@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <title>test</title>
+
+</head>
+<body>
+    <script>
+        $(function () {
+            window.localStorage.setItem('value', 'crapper');
+            alert("test " + window.localStorage.getItem('value') );
+        });
+        function buttonClick() {
+           alert('test click');
+        }
+    </script>
+     <a href="index.html?growerid=34">test</a>
+
+    <button id="as" type="button" onclick='buttonClick()'>Left button</button>
+
+</body>
+</html>

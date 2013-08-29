@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <title>My Page</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+<!--    <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script> -->
+ <!--   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
+ <!--    <script type="text/javascript">
+        // $(document).ready(
+        //     function () {
+        //  //   alert(window.location.toString());
+        //     // display temp image while loading the content 
+        // //    $("#cityWeather").html("<img src='images/al1.gif' />");
+        //     // get the query string value 
+        ////     var ct = getUrlVars()["growerid"];
+
+        //     alert("test");
+        //     }
+        // );
+             //$.ajax({
+             //    url: "services/myService.asmx/cityWeather",
+             //    dataType: "html", // data type can have text 
+             //    type: "post",
+             //    data: { city: ct },
+             //    error: function (err) {
+
+             //        alert("Error: " + err.toString());
+
+             //    },
+
+             //    success: function (data) {
+
+             //        $("#cityWeather").html(data);
+
+             //    },
+             //    async: false,
+             //    timeout: 2000
+             //});
+
+             // Read a page's GET URL variables and return them as an associative array. 
+         //function getUrlVars() {
+         //    alert("testing");
+         //    var vars = [], hash;
+         //    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+         //    for (var i = 0; i < hashes.length; i++) {
+         //        hash = hashes[i].split('=');
+         //        vars.push(hash[0]);
+         //        vars[hash[0]] = hash[1];
+         //    }
+
+         //    return vars;
+         //};
+     
+
+     </script>-->
+</head> 
+
+<body>
+
+       <a href="http://jquery.com/">jQuery</a>
+   <script>
+
+        $(function () {
+            var yourUrl = window.location.toString(); //.location.toString(); // .origin // location.href; // "http://www.sitename.com/article/2009/09/14/this-is-an-article/";
+            
+          //  alert(window.location.querystring.toString());
+
+           alert(yourUrl);
+  //          yourUrl = window.location.host.toString();
+  //          alert(yourUrl);
+ //           var parse_url = /^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/;
+ //           var parts = parse_url.exec(yourUrl);
+ //           var result = parts[1] + ':' + parts[2] + parts[3] + '/';
+         //   var url = $.url('http://allmarkedup.com'); // pass in a URI as a string and parse that 
+         //   var url = $('#myElement').url(); // extract the URL from the selected element and parse that - will work on any element with a `src`, `href` or `action` attribute.
+
+     //     var first =  $.url().param('growerid');
+   //         alert(result);
+         //   var first = getURLParameter("growerid");
+         //   var second = getUrlVars()["page"];
+
+       //    alert(first);
+        //    alert(second);
+
+
+      //      alert("loaded");
+            alert("second");
+            $("a").click(function (event) {
+                var myval = window.location.toString(); // .search.substr(1)
+                alert(myval);
+             // event.preventDefault();
+            });
+        });
+
+        function getURLParameter(name) {
+            return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
+        }
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        //var getUrlVars = (function () {
+        //    var vars;
+        //    return function () {
+        //        if (vars !== undefined) return vars;
+        //        vars = {};
+        //        window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+        //            vars[key] = value;
+        //        });
+        //        return vars;
+        //    }
+        //})();
+    </script>
+
+    <div data-role="header" data-position="fixed" data-theme="b">
+        <a href="index.html" data-rel="back" data-icon="arrow-l">Growers</a>
+        <h1>Field Name</h1>
+    </div><!-- /header -->
+
+    <div data-role="content">	
+        <ul data-role="listview" data-theme="c">
+            <li><a href="acura.html"><h3>South 80</h3></a> </li>
+            <li><a href="acura.html"><h3>Bernies Old  40</h3></a></li>
+            <li><a href="acura.html"><h3>Non-Irrigated River plot</h3></a> </li>
+            <li><a href="acura.html"><h3>Helens Rental</h3></a></li>
+            <li><a href="acura.html"><h3>NW Secion 1 </h3></a></li>
+            <li><a href="acura.html"><h3>NE Section 1</h3></a></li>
+        </ul>
+
+    </div><!-- /content -->
+
+    <div data-role="footer" data-position="fixed" data-theme="a">
+    <h1>Footer!</h1>
+</div>
+</body>
+</html>

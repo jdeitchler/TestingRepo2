@@ -1,0 +1,67 @@
+﻿
+<!DOCTYPE html> 
+<html> 
+    <head> 
+    <title>My Page</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+</head> 
+<body> 
+     <a href="http://localhost:3114/GrowerDetail.html?growerid=34">testing</a>
+<div data-role="page" id="bar">
+ 
+    <div data-role="header" data-theme="b">
+        <h1>Grower Details</h1>
+    </div><!-- /header -->
+
+    <script>
+        $(document).ready(function () {
+            alert("store value " + window.localStorage.getItem('value'));
+       //     window.localStorage.setItem('value', 'crapper');
+        });
+    </script>
+
+    <div data-role="content">	
+        <ul data-role="listview" data-filter="true" data-theme="c">
+            <li>
+               <h3>All Growers</h3>
+            </li>
+            <li data-role="list-divider" data-dividertheme="b" >A</li>
+            <li data-icon="false">
+                <a href="GrowerDetail.html?growerid=34" ><h3>Anderson, Andrew</h3>
+                <p>Becker County, MN</p></a>
+            </li>
+            <li data-icon="false">
+                <a href="GrowerDetail.html?growerid=34"><h3>Atkinson, Keith</h3>
+                <p>Becker County, MN</p></a>
+            </li>
+            <li data-role="list-divider">B</li>
+            <li data-icon="false">
+                <a href="GrowerDetail.html?growerid=34"><h3>Brentley, Carl</h3>
+                <p>Becker County, MN</p></a>
+            </li>
+            <li data-icon="false">
+                <a href="GrowerDetail.html?growerid=34"><h3>Banderus, Anthony</h3>
+                <p>Becker County, MN</p></a>
+            </li>
+            <li data-role="list-divider">C</li>
+            <li data-icon="false">
+                <a href="GrowerDetail.html?growerid=34"><h3>Christianson, Greg</h3>
+                <p>Becker County, MN</p></a>
+            </li>
+           <li data-icon="false">
+                <a href="GrowerDetail.html?growerid=34"><h3>Cutler, Jay</h3>
+                <p>Becker County, MN</p></a>
+            </li>
+    <li><a href="#foo">Back</a></li>
+        </ul>
+
+    </div><!-- /content -->
+</div><!-- /page -->
+
+
+
+</body>
+</html>
